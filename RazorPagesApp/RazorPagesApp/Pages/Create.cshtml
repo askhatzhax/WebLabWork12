@@ -1,0 +1,13 @@
+﻿@page
+@model RazorPagesApp.Pages.People.CreateModel
+@{
+    ViewData["Title"] = "Добавление нового товара";
+}
+<h2>@ViewData["Title"]</h2>
+<div asp-validation-summary="All"></div>
+<form method="POST">
+    <div><label>Имя</label><br /><input asp-for="Person.Name" /></div>
+    <div><label>Цена:</label><br /><input asp-for="Person.Age" type="number" /></div>
+
+    <input type="submit" value="Отправить" />
+</form>
